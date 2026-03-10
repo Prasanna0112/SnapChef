@@ -1,11 +1,8 @@
 # Dependencies
-server/node_modules/
-client/node_modules/
+node_modules/
 
 # Environment variables
-server/.env
-client/.env
-.env.local
+.env
 
 # Build outputs
 dist/
@@ -20,4 +17,4 @@ Thumbs.db
 npm-debug.log*
 
 # Vite
-client/.vite/
+.vite/
