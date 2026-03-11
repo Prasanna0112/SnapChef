@@ -2,6 +2,7 @@ import express from 'express';
 import connectDB from './config/db.js';
 import cors from 'cors';
 import authRoutes from './routes/authRoutes.js';
+import pantryRoutes from './routes/pantryRoutes.js';
 import dotenv from 'dotenv';
 
 // Load env variables
@@ -19,6 +20,7 @@ const PORT = process.env.PORT || 3000;
 
 //Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/pantry', pantryRoutes);
 
 app.get('/', (req, res) => {
   res.json({ message: '🍳 SnapChef API is running!' });
