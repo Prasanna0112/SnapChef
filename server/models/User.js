@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema(
       required: [true, 'Password is required'],
       minlength: 6,
     },
-    preference: {
+    preferences: {
       dietType: {
         type: String,
         enum: ['veg', 'non-veg', 'vegan'],
